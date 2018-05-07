@@ -1,0 +1,34 @@
+{
+  "development":{
+     "port":"8081",
+     "db":{
+        "database":"precisiondb",
+        "user":"root",
+        "password":"",
+        "options":{
+           "dialect":"mysql",
+           "host":"localhost"
+        }
+     },
+     "authentication":{
+        "jwtSecret":"secret"
+     },
+     "recaptchaSecretkey":"6LftqVYUAAAAABH0Tcsu095LEeCD8dRgNLTD39G6"
+  },
+  "production": {
+    "port":"8081",
+    "db":{
+       "database":"asd",
+       "user":"root",
+       "password":"",
+       "options":{
+          "dialect":"mysql",
+          "host":"localhost"
+       }
+    },
+    "authentication":{
+       "jwtSecret":"secret"
+    },
+    "recaptchaSecretkey":"6LftqVYUAAAAABH0Tcsu095LEeCD8dRgNLTD39G6"
+ }
+  }

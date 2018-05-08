@@ -12,7 +12,6 @@ module.exports = {
         return
       }
       if (JSON.parse(body).success) {
-        console.log('success')
         next()
       }
     })

@@ -6,7 +6,6 @@ const UsersController = require('./controllers/UsersController')
 module.exports = (app) => {
   // app.post('/register', reCaptchaPolicy.validate, AuthControllerPolicy.register, AuthController.register)
   // app.post('/login', reCaptchaPolicy.validate, AuthController.login)
-
   app.post('/register', AuthControllerPolicy.register, AuthController.register)
   app.post('/login', AuthController.login)
   app.get('/users', UsersController.index)

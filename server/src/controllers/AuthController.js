@@ -24,7 +24,7 @@ module.exports = {
           email: email
         }
       })
-
+      console.log(user)
       if (!user) {
         return res.status(403).send({
           error: 'The login information was incorrect'
@@ -39,8 +39,6 @@ module.exports = {
       }
 
       const userJson = user.toJSON()
-      console.log('=========================')
-      console.log(userJson)
       res.send({
         user: userJson,
         token: auth.jwtSignUser(userJson)

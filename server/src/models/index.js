@@ -3,7 +3,6 @@ const path = require('path')
 const Sequelize = require('sequelize')
 const config = require('../config/config.json')[process.env.NODE_ENV || 'development']
 const db = {}
-console.log(process.env.NODE_ENV)
 
 const sequelize = new Sequelize(
   config.db.database,

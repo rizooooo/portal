@@ -7,7 +7,8 @@
         "password":"",
         "options":{
            "dialect":"mysql",
-           "host":"localhost"
+           "host":"localhost",
+           "port": "3306"
         }
      },
      "authentication":{
@@ -15,15 +16,16 @@
      },
      "recaptchaSecretkey":"6LftqVYUAAAAABH0Tcsu095LEeCD8dRgNLTD39G6"
   },
-  "production": {
+  "staging": {
     "port":"8081",
     "db":{
-       "database":"asd",
-       "user":"root",
-       "password":"",
+       "database":"precision_db",
+       "user":"stageportal_user",
+       "password":"stageportalpassword",
        "options":{
           "dialect":"mysql",
-          "host":"localhost"
+          "host":"stage-portal-db-instance.cbrtbgfrldkq.us-east-2.rds.amazonaws.com",
+          "port": "3306"
        }
     },
     "authentication":{

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/app.js --exec  \"npm run lint && node\"",
-    "build": "set NODE_ENV=production && webpack --config webpack.config.js",
+    "build-staging": "set NODE_ENV=staging && node src/app.js",
     "lint": "./node_modules/.bin/eslint **/*.js"
   },
   "keywords": [],

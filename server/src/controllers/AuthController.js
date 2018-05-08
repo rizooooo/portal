@@ -24,7 +24,6 @@ module.exports = {
           email: email
         }
       })
-      console.log(user)
       if (!user) {
         return res.status(403).send({
           error: 'The login information was incorrect'
